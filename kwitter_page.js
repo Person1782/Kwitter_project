@@ -36,7 +36,7 @@ function getData() { firebase.database().ref("/"+room_name).on('value', function
 
       part_2 = "<h4 class='message_h4'> " + message+ "</h4>"
 
-      part_3 = "<button class='btn btn-warning' id=" + firebase_message_id +" value=" + like + " onclick='update_like(this_id)'>";
+      part_3 = "<button class='btn btn-primary' id=" + firebase_message_id +" value=" + like + " onclick='update_like(this_id)'>";
       
       part_4 = "<span class='glyphicon glyphicon-thumbs-up'>Like:" + like + "</span></button><hr>";
 
